@@ -44,8 +44,12 @@ export default function ChurchDetailPage(params) {
             <a href="/" className="text-white">
               <ArrowLeft className="h-6 w-6" />
             </a>
-            <Button variant="ghost" size="icon" className="text-white">
-              <Heart className="h-6 w-6" />
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-white heart-icon"
+            >
+              <Heart className="h-6 w-6 " />
             </Button>
           </div>
           <div className="bottom-0 left-0 right-0 p-4 text-white detail-info-image-text">
@@ -88,8 +92,8 @@ export default function ChurchDetailPage(params) {
 
           <TabsContent value="info" className="p-4 space-y-4">
             <div className="space-y-2">
-              <h2 className="text-lg font-semibold">За храма</h2>
-              <p className="text-sm text-muted-foreground">
+              <h2 className="text-lg font-semibold content-label">За храма</h2>
+              <p className="text-sm text-muted-foreground content-text">
                 Храм-паметникът „Свети Александър Невски" е православен храм в
                 София, България, който служи като катедрала на българския
                 патриарх. Построен е в периода 1882-1912 г. в неовизантийски
@@ -98,8 +102,8 @@ export default function ChurchDetailPage(params) {
             </div>
 
             <div className="space-y-2">
-              <h2 className="text-lg font-semibold">История</h2>
-              <p className="text-sm text-muted-foreground">
+              <h2 className="text-lg font-semibold content-label">История</h2>
+              <p className="text-sm text-muted-foreground content-text">
                 Храмът е построен в чест на руските войници, загинали по време
                 на Руско-турската война от 1877-1878 г., която довежда до
                 освобождението на България от османско владичество. Основният
@@ -109,26 +113,28 @@ export default function ChurchDetailPage(params) {
             </div>
 
             <div className="space-y-2">
-              <h2 className="text-lg font-semibold">Архитектура</h2>
-              <p className="text-sm text-muted-foreground">
+              <h2 className="text-lg font-semibold content-label">
+                Архитектура
+              </h2>
+              <p className="text-sm text-muted-foreground content-text">
                 Катедралата е кръстокуполна базилика с площ от 3170 кв. м. и
                 може да побере до 5000 души. Има 12 камбани с общо тегло от 23
                 тона, като най-голямата тежи 12 тона и е висока 2.5 метра.
               </p>
             </div>
 
-            <Button className="w-full" variant="outline">
-              <Info className="h-4 w-4 mr-2" />
-              Пълна информация
+            <Button className="w-full more-info-button" variant="outline">
+              <Info className="h-4 w-4 mr-2 info-icon" />
+              <p>Пълна информация</p>
             </Button>
           </TabsContent>
 
           <TabsContent value="icons" className="p-4 space-y-4">
             <div className="grid grid-cols-2 gap-4">
-              <a href="/icon/1" className="space-y-2">
+              <a href="/icon/1" className="space-y-2 no-hover">
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/images/HristosPantokratos.jpg?height=300&width=300"
                     alt="Икона на Христос Пантократор"
                     className="w-full h-full object-cover"
                   />
@@ -139,10 +145,10 @@ export default function ChurchDetailPage(params) {
                 </p>
               </a>
 
-              <a href="/icon/2" className="space-y-2">
+              <a href="/icon/2" className="space-y-2 no-hover">
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/images/svBogorodica.jpg?height=300&width=300"
                     alt="Икона на Света Богородица"
                     className="w-full h-full object-cover"
                   />
@@ -153,10 +159,10 @@ export default function ChurchDetailPage(params) {
                 </p>
               </a>
 
-              <a href="/icon/3" className="space-y-2">
+              <a href="/icon/3" className="space-y-2 no-hover">
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/images/svAleksandarNevski.jpg?height=300&width=300"
                     alt="Икона на Св. Александър Невски"
                     className="w-full h-full object-cover"
                   />
@@ -167,10 +173,10 @@ export default function ChurchDetailPage(params) {
                 </p>
               </a>
 
-              <a href="/icon/4" className="space-y-2">
+              <a href="/icon/4" className="space-y-2 no-hover">
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/images/svIoanKrastitel.jpg?height=300&width=300"
                     alt="Икона на Св. Йоан Кръстител"
                     className="w-full h-full object-cover"
                   />
@@ -182,7 +188,7 @@ export default function ChurchDetailPage(params) {
               </a>
             </div>
 
-            <Button className="w-full" variant="outline">
+            <Button className="w-full more-info-button" variant="outline">
               Виж всички икони (24)
             </Button>
           </TabsContent>
@@ -392,7 +398,7 @@ export default function ChurchDetailPage(params) {
           <div className="p-4 border-t bg-white">
             <div className="flex items-center justify-between mb-2">
               <div>
-                <h3 className="font-medium">QR Гид</h3>
+                <h3 className="font-medium content-label">QR Гид</h3>
                 <p className="text-xs text-muted-foreground">
                   Сканирайте QR кодове за повече информация
                 </p>
@@ -400,14 +406,14 @@ export default function ChurchDetailPage(params) {
               <Button
                 variant="outline"
                 size="icon"
-                className="h-10 w-10 rounded-full"
+                className="h-10 w-10 rounded-full qr-button"
               >
-                <QrCode className="h-5 w-5" />
+                <QrCode className="h-5 w-5 qr-icon" />
               </Button>
             </div>
             <div className="mt-2 p-4 border rounded-lg text-center">
               <Scan className="h-8 w-8 mx-auto mb-2 text-muted-foreground" />
-              <p className="text-sm">
+              <p className="text-sm qr-text">
                 Натиснете бутона и сканирайте QR код в църквата
               </p>
             </div>
@@ -428,7 +434,7 @@ export default function ChurchDetailPage(params) {
               </p>
               <a
                 href={`/church/${params.id}/element/1`}
-                className="mt-2 flex items-center text-primary text-sm"
+                className="mt-2 flex items-center text-primary text-sm more-info-last-scan"
               >
                 Повече информация
                 <ChevronRight className="h-4 w-4 ml-1" />
@@ -449,12 +455,12 @@ export default function ChurchDetailPage(params) {
               onClick={togglePlay}
               variant="outline"
               size="icon"
-              className="h-10 w-10 rounded-full"
+              className="h-10 w-10 rounded-full qr-button"
             >
               {isPlaying ? (
-                <Pause className="h-5 w-5" />
+                <Pause className="h-5 w-5 qr-icon qr-icon-pause" />
               ) : (
-                <Play className="h-5 w-5" />
+                <Play className="h-5 w-5 qr-icon qr-icon-play" />
               )}
             </Button>
           </div>
@@ -476,11 +482,19 @@ export default function ChurchDetailPage(params) {
                 className="audio-progress"
               />
               <div className="flex justify-center gap-4 mt-2">
-                <Button variant="ghost" size="icon" className="h-8 w-8">
-                  <SkipBack className="h-4 w-4" />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8 qr-button qr-forward"
+                >
+                  <SkipBack className="h-4 w-4 qr-icon qr-icon-forward" />
                 </Button>
-                <Button variant="ghost" size="icon" className="h-8 w-8">
-                  <SkipForward className="h-4 w-4" />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8 qr-button qr-forward"
+                >
+                  <SkipForward className="h-4 w-4 qr-icon qr-icon-forward" />
                 </Button>
               </div>
             </div>

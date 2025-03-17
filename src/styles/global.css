@@ -61,7 +61,7 @@ img {
 .container {
     width: 100%;
     max-width: 28rem;
-    width: 385px;
+    width: 395px;
     /* 448px */
     margin: 0 auto;
     background-color: var(--color-background);

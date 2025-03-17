@@ -53,11 +53,91 @@
 }
 
 .tab-trigger {
-    color: black;
+    color: #666;
     /* Default text color */
     transition: color 0.3s ease-in-out;
 }
 
 .buttons-list[data-state="active"] {
     color: black;
+    font-weight: 500;
+}
+
+.content-label {
+    font-size: 18px;
+}
+
+.content-text {
+    color: #666;
+}
+
+.more-info-button {
+    display: flex;
+    background-color: white;
+    color: black;
+}
+
+.more-info-button:hover {
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+}
+
+.info-icon {
+    height: 18px;
+}
+
+.qr-text {
+    font-size: 0.8rem;
+}
+
+.qr-button {
+    padding: 10px 12px;
+    background-color: #fff;
+    border: 1px solid #e5e3e3;
+}
+
+.qr-button:hover {
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+}
+
+.qr-icon {
+    color: black;
+}
+
+.more-info-last-scan {
+    color: #666;
+}
+
+.more-info-last-scan:hover {
+    color: black;
+}
+
+.qr-icon-play {
+    padding: 3px 0 0 3px;
+}
+
+.qr-icon-pause {
+    padding-top: 3px;
+}
+
+.qr-forward {
+    padding: 2px 5px 0px 5px;
+}
+
+.qr-icon-forward {
+    color: rgb(84, 84, 84);
+}
+
+.heart-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.heart-icon:hover {
+    border: none;
+}
+
+.no-hover:hover {
+    color: unset;
 }
