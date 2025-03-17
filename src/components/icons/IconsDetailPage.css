@@ -1,0 +1,39 @@
+.wrapper {
+    color: white;
+}
+
+.header-label {
+    font-size: 20px;
+}
+
+.link-morechurch {
+    align-items: center;
+    padding: 3px 10px;
+}
+
+.link-morechurch:hover {
+    color: unset;
+}
+
+.chucrh-image-container {
+    display: flex;
+    width: 65px;
+    height: 65px;
+    margin: 10px 10px 10px 0;
+}
+
+.chucrh-image-container img {
+    border-radius: 10px;
+}
+
+.link-morechurch h3 {
+    font-size: 14px;
+}
+
+.icon-box {
+    width: 14px;
+}
+
+.address {
+    color: #666;
+}

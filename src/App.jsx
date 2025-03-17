@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import ChurchDetailPage from "./components/churchInfo/ChurchDetailPage";
+import { IconsDetailPage } from "./components/icons/IconsDetailPage";
+import Artists from "./components/artists/Artists";
 
 function App() {
   return (
@@ -8,9 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/church/:id" element={<ChurchDetailPage />} />
-        {/* <Route path="/user/:id" element={<UserPage />} /> 
-        <Route path="*" element={<NotFoundPage />} />{" "}
-        */}
+        <Route path="/icon/:id" element={<IconsDetailPage />} />
+        <Route path="/artist/:id" element={<Artists />} />
       </Routes>
     </Router>
   );
