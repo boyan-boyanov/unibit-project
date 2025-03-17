@@ -197,19 +197,21 @@ export default function ChurchDetailPage(params) {
             <div className="space-y-4">
               <a
                 href="/artist/1"
-                className="flex items-center gap-3 p-3 border rounded-lg"
+                className="flex items-center gap-3 p-3 border rounded-lg artist-link"
               >
-                <div className="w-12 h-12 rounded-full overflow-hidden">
+                <div className="rounded-full overflow-hidden artist-container">
                   <img
-                    src="/placeholder.svg?height=100&width=100"
+                    src="/images/AntonMitov.png?height=50&width=50"
                     alt="Антон Митов"
-                    className="w-full h-full object-cover"
+                    className="object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="font-medium">Антон Митов</h3>
-                  <p className="text-xs text-muted-foreground">1862-1930 г.</p>
-                  <p className="text-xs text-muted-foreground">
+                  <h3 className="font-medium artist-name">Антон Митов</h3>
+                  <p className="text-xs text-muted-foreground content-text">
+                    1862-1930 г.
+                  </p>
+                  <p className="text-xs text-muted-foreground content-text">
                     8 икони в този храм
                   </p>
                 </div>
@@ -217,19 +219,21 @@ export default function ChurchDetailPage(params) {
 
               <a
                 href="/artist/2"
-                className="flex items-center gap-3 p-3 border rounded-lg"
+                className="flex items-center gap-3 p-3 border rounded-lg artist-link"
               >
-                <div className="w-12 h-12 rounded-full overflow-hidden">
+                <div className="w-12 h-12 rounded-full overflow-hidden artist-container">
                   <img
-                    src="/placeholder.svg?height=100&width=100"
+                    src="/images/ivanMurkvichka.png?height=50&width=50"
                     alt="Иван Мърквичка"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="font-medium">Иван Мърквичка</h3>
-                  <p className="text-xs text-muted-foreground">1856-1938 г.</p>
-                  <p className="text-xs text-muted-foreground">
+                  <h3 className="font-medium artist-name">Иван Мърквичка</h3>
+                  <p className="text-xs text-muted-foreground content-text">
+                    1856-1938 г.
+                  </p>
+                  <p className="text-xs text-muted-foreground content-text">
                     6 икони в този храм
                   </p>
                 </div>
@@ -237,26 +241,28 @@ export default function ChurchDetailPage(params) {
 
               <a
                 href="/artist/3"
-                className="flex items-center gap-3 p-3 border rounded-lg"
+                className="flex items-center gap-3 p-3 border rounded-lg artist-link"
               >
-                <div className="w-12 h-12 rounded-full overflow-hidden">
+                <div className="w-12 h-12 rounded-full overflow-hidden artist-container">
                   <img
-                    src="/placeholder.svg?height=100&width=100"
+                    src="/images/stefanIvanov.png?height=50&width=50"
                     alt="Стефан Иванов"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="font-medium">Стефан Иванов</h3>
-                  <p className="text-xs text-muted-foreground">1875-1951 г.</p>
-                  <p className="text-xs text-muted-foreground">
+                  <h3 className="font-medium artist-name">Стефан Иванов</h3>
+                  <p className="text-xs text-muted-foreground content-text">
+                    1875-1951 г.
+                  </p>
+                  <p className="text-xs text-muted-foreground content-text">
                     5 икони в този храм
                   </p>
                 </div>
               </a>
             </div>
 
-            <Button className="w-full" variant="outline">
+            <Button className="w-full more-info-button" variant="outline">
               Виж всички художници (12)
             </Button>
           </TabsContent>
@@ -264,8 +270,10 @@ export default function ChurchDetailPage(params) {
           <TabsContent value="comments" className="p-4 space-y-4">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <h2 className="text-lg font-semibold">Коментари</h2>
-                <span className="text-xs text-muted-foreground">
+                <h2 className="text-lg font-semibold content-label">
+                  Коментари
+                </h2>
+                <span className="text-xs text-muted-foreground more-info-last-scan">
                   12 коментара
                 </span>
               </div>
@@ -274,17 +282,19 @@ export default function ChurchDetailPage(params) {
               <div className="space-y-4">
                 <div className="p-3 border rounded-lg">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full overflow-hidden">
+                    <div className="w-8 h-8 rounded-full overflow-hidden artist-container">
                       <img
-                        src="/placeholder.svg?height=100&width=100"
+                        src="/images/flowers.png?height=100&width=100"
                         alt="Потребител"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">Мария Иванова</h3>
-                        <span className="text-xs text-muted-foreground">
+                        <h3 className="font-medium artist-name">
+                          Мария Иванова
+                        </h3>
+                        <span className="text-xs text-muted-foreground more-info-last-scan">
                           преди 2 дни
                         </span>
                       </div>
@@ -299,17 +309,19 @@ export default function ChurchDetailPage(params) {
 
                 <div className="p-3 border rounded-lg">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full overflow-hidden">
+                    <div className="w-8 h-8 rounded-full overflow-hidden artist-container">
                       <img
-                        src="/placeholder.svg?height=100&width=100"
+                        src="/images/dog.png?height=100&width=100"
                         alt="Потребител"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">Георги Петров</h3>
-                        <span className="text-xs text-muted-foreground">
+                        <h3 className="font-medium artist-name">
+                          Георги Петров
+                        </h3>
+                        <span className="text-xs text-muted-foreground more-info-last-scan">
                           преди 5 дни
                         </span>
                       </div>
@@ -324,17 +336,19 @@ export default function ChurchDetailPage(params) {
 
                 <div className="p-3 border rounded-lg">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full overflow-hidden">
+                    <div className="w-8 h-8 rounded-full overflow-hidden artist-container">
                       <img
-                        src="/placeholder.svg?height=100&width=100"
+                        src="/images/forest.png?height=100&width=100"
                         alt="Потребител"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">Елена Димитрова</h3>
-                        <span className="text-xs text-muted-foreground">
+                        <h3 className="font-medium artist-name">
+                          Елена Димитрова
+                        </h3>
+                        <span className="text-xs text-muted-foreground more-info-last-scan">
                           преди 1 седмица
                         </span>
                       </div>
@@ -350,17 +364,10 @@ export default function ChurchDetailPage(params) {
 
               {/* Форма за коментар или бутон за вход */}
               {isLoggedIn ? (
-                <div className="space-y-3 mt-4">
+                <div className="space-y-3 mt-4 loggin-button add-comments">
                   <h3 className="text-sm font-medium">Добави коментар</h3>
                   <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full overflow-hidden">
-                      <img
-                        src="/placeholder.svg?height=100&width=100"
-                        alt="Вашият профил"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="flex-1">
+                    <div className="flex-comment flex-1">
                       <Textarea
                         placeholder="Споделете вашето мнение..."
                         className="w-full resize-none"
@@ -371,7 +378,7 @@ export default function ChurchDetailPage(params) {
                   </div>
                 </div>
               ) : (
-                <div className="p-4 bg-muted rounded-lg text-center space-y-2">
+                <div className="p-4 bg-muted rounded-lg text-center space-y-2 loggin-button">
                   <p className="text-sm">
                     Трябва да сте влезли в профила си, за да публикувате
                     коментар
@@ -379,14 +386,17 @@ export default function ChurchDetailPage(params) {
                   <Button
                     variant="outline"
                     onClick={() => setIsLoggedIn(true)}
-                    className="text-xs"
+                    className="text-xs more-info-button"
                   >
                     Вход / Регистрация
                   </Button>
                 </div>
               )}
 
-              <Button variant="outline" className="w-full text-sm">
+              <Button
+                variant="outline"
+                className="w-full text-sm more-info-button"
+              >
                 Зареди още коментари
               </Button>
             </div>
