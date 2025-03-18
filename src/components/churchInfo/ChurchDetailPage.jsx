@@ -443,7 +443,7 @@ export default function ChurchDetailPage(params) {
                 между земния и небесния свят.
               </p>
               <a
-                href={`/church/${params.id}/element/1`}
+                href={`/element/1`}
                 className="mt-2 flex items-center text-primary text-sm more-info-last-scan"
               >
                 Повече информация

@@ -109,7 +109,7 @@ export default function Artists() {
                   <a href="/icon/1" className="space-y-1">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=200&width=200"
+                        src="/images/HristosPantokratos.jpg?height=200&width=200"
                         alt="Христос Пантократор"
                         className="w-full h-full object-cover"
                       />
@@ -121,7 +121,7 @@ export default function Artists() {
                   <a href="/icon/4" className="space-y-1">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=200&width=200"
+                        src="/images/svIoanKrastitel.jpg?height=200&width=200"
                         alt="Св. Йоан Кръстител"
                         className="w-full h-full object-cover"
                       />
@@ -148,7 +148,7 @@ export default function Artists() {
                   <a href="/icon/5" className="space-y-1">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=200&width=200"
+                        src="/images/svBogorodica.jpg?height=200&width=200"
                         alt="Света Богородица"
                         className="w-full h-full object-cover"
                       />
@@ -160,7 +160,7 @@ export default function Artists() {
                   <a href="/icon/6" className="space-y-1">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=200&width=200"
+                        src="/images/svNikolai.jpg?height=200&width=200"
                         alt="Св. Николай"
                         className="w-full h-full object-cover"
                       />
@@ -187,12 +187,24 @@ export default function Artists() {
                   <a href="/icon/7" className="space-y-1">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
-                        src="/placeholder.svg?height=200&width=200"
+                        src="/images/kirilMetodii.jpg?height=200&width=200"
                         alt="Св. Кирил и Методий"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <p className="text-xs font-medium">Св. Кирил и Методий</p>
+                    <p className="text-xs text-muted-foreground">1903 г.</p>
+                  </a>
+
+                  <a href="/icon/7" className="space-y-1">
+                    <div className="aspect-square rounded-lg overflow-hidden">
+                      <img
+                        src="/images/Mihail2.jpg?height=200&width=200"
+                        alt="Св. Арх. Михаил"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="text-xs font-medium">Св. Арх. Михаил</p>
                     <p className="text-xs text-muted-foreground">1903 г.</p>
                   </a>
                 </div>
