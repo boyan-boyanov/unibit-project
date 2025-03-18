@@ -106,7 +106,7 @@ export default function Artists() {
                   Храм "Св. Александър Невски", София
                 </h4>
                 <div className="p-3 grid grid-cols-2 gap-3">
-                  <a href="/icon/1" className="space-y-1">
+                  <a href="/icon/1" className="space-y-1 no-hover">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
                         src="/images/HristosPantokratos.jpg?height=200&width=200"
@@ -118,7 +118,7 @@ export default function Artists() {
                     <p className="text-xs text-muted-foreground">1911 г.</p>
                   </a>
 
-                  <a href="/icon/4" className="space-y-1">
+                  <a href="/icon/4" className="space-y-1 no-hover">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
                         src="/images/svIoanKrastitel.jpg?height=200&width=200"
@@ -131,10 +131,7 @@ export default function Artists() {
                   </a>
                 </div>
                 <div className="p-3 pt-0 text-center">
-                  <a
-                    href="/church/1/icons?artist=1"
-                    className="text-xs text-primary"
-                  >
+                  <a href="#" className="text-xs text-primary no-hover">
                     Виж всички (8 икони)
                   </a>
                 </div>
@@ -145,7 +142,7 @@ export default function Artists() {
                   Храм "Св. Николай Софийски", София
                 </h4>
                 <div className="p-3 grid grid-cols-2 gap-3">
-                  <a href="/icon/5" className="space-y-1">
+                  <a href="/icon/5" className="space-y-1 no-hover">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
                         src="/images/svBogorodica.jpg?height=200&width=200"
@@ -157,7 +154,7 @@ export default function Artists() {
                     <p className="text-xs text-muted-foreground">1914 г.</p>
                   </a>
 
-                  <a href="/icon/6" className="space-y-1">
+                  <a href="/icon/6" className="space-y-1 no-hover">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
                         src="/images/svNikolai.jpg?height=200&width=200"
@@ -170,10 +167,7 @@ export default function Artists() {
                   </a>
                 </div>
                 <div className="p-3 pt-0 text-center">
-                  <a
-                    href="/church/4/icons?artist=1"
-                    className="text-xs text-primary"
-                  >
+                  <a href="#" className="text-xs text-primary no-hover">
                     Виж всички (5 икони)
                   </a>
                 </div>
@@ -184,7 +178,7 @@ export default function Artists() {
                   Храм "Св. Седмочисленици", София
                 </h4>
                 <div className="p-3 grid grid-cols-2 gap-3">
-                  <a href="/icon/7" className="space-y-1">
+                  <a href="/icon/7" className="space-y-1 no-hover">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
                         src="/images/kirilMetodii.jpg?height=200&width=200"
@@ -196,7 +190,7 @@ export default function Artists() {
                     <p className="text-xs text-muted-foreground">1903 г.</p>
                   </a>
 
-                  <a href="/icon/7" className="space-y-1">
+                  <a href="/icon/7" className="space-y-1 no-hover">
                     <div className="aspect-square rounded-lg overflow-hidden">
                       <img
                         src="/images/Mihail2.jpg?height=200&width=200"
@@ -209,10 +203,7 @@ export default function Artists() {
                   </a>
                 </div>
                 <div className="p-3 pt-0 text-center">
-                  <a
-                    href="/church/5/icons?artist=1"
-                    className="text-xs text-primary"
-                  >
+                  <a href="#" className="text-xs text-primary no-hover">
                     Виж всички (3 икони)
                   </a>
                 </div>
