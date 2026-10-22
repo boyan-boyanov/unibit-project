@@ -4,6 +4,7 @@ import ChurchDetailPage from "./components/churchInfo/ChurchDetailPage";
 import { IconsDetailPage } from "./components/icons/IconsDetailPage";
 import Artists from "./components/artists/Artists";
 import { Iconostas } from "./components/iconostas/Iconostas";
+import ComingSoonPage from "./pages/ComingSoon/ComingSoonPage";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/icon/:id" element={<IconsDetailPage />} />
         <Route path="/artist/:id" element={<Artists />} />
         <Route path="/element/:id" element={<Iconostas />} />
+        <Route path="/favorites" element={<ComingSoonPage active="favorites" />} />
+        <Route path="/profile" element={<ComingSoonPage active="profile" />} />
       </Routes>
     </Router>
   );
