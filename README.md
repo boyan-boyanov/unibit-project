@@ -1,12 +1,15 @@
-# React + Vite
+# Здраво Земя: 24h Hackathon Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Gamified web app that teaches kids healthy habits through missions and a food quiz.
+Built in 24 hours by a team of 3 at the UniBIT hackathon.
 
-Currently, two official plugins are available:
+**Live demo:** https://hackathon-unibit.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## My role
+Frontend development: React components, quiz logic, player progress (level & XP).
 
-## Expanding the ESLint configuration
+## Stack
+React · Vite · CSS · deployed on Vercel
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Note
+UI built on top of a free HTML template to fit the 24-hour limit.
