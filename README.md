@@ -10,4 +10,4 @@ University project (UniBIT).
 React · Vite · Tailwind CSS · shadcn/ui · React Router · Vercel
 
 ## Status
-Data is mocked. Favorites and Profile are in progress.
+Built in 3 days as a university exam project. Data is mocked; Favorites and Profile are placeholders.
